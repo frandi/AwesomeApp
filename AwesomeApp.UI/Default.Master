@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="AwesomeApp.UI.Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header>
+                <h1><span class="glyphicon glyphicon-star"></span>Awesome App</h1>
+            </header>
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class='<%: (Page as AwesomeApp.UI.BasePage).MenuItem == "home" ? "active" : ""  %>'><a href="/">Home</a></li>
+                            <li class='<%: (Page as AwesomeApp.UI.BasePage).MenuItem == "profile" ? "active" : ""  %>'><a href="#">Profile</a></li>
+                            <li class='<%: (Page as AwesomeApp.UI.BasePage).MenuItem == "contact" ? "active" : ""  %>'><a href="Contact.aspx">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9">
+                        <h2><%: Page.Title %></h2>
+                        <asp:ContentPlaceHolder ID="main" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="well">&copy; PTM <%: DateTime.Now.Year %></div>
+            </footer>
+        </div>
+    </form>
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeApp.UI", "AwesomeApp.UI\AwesomeApp.UI.csproj", "{2B9FF751-11AE-464D-9B69-F07B9D6BBDA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeApp.BL", "AwesomeApp.BL\AwesomeApp.BL.csproj", "{057DFF37-2F8F-4E9B-B1DA-325DF5B23AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeApp.DA", "AwesomeApp.DA\AwesomeApp.DA.csproj", "{E9CB8E6B-A223-49C5-B0EA-6041DACC3EB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B9FF751-11AE-464D-9B69-F07B9D6BBDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9FF751-11AE-464D-9B69-F07B9D6BBDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9FF751-11AE-464D-9B69-F07B9D6BBDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9FF751-11AE-464D-9B69-F07B9D6BBDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057DFF37-2F8F-4E9B-B1DA-325DF5B23AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057DFF37-2F8F-4E9B-B1DA-325DF5B23AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057DFF37-2F8F-4E9B-B1DA-325DF5B23AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057DFF37-2F8F-4E9B-B1DA-325DF5B23AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9CB8E6B-A223-49C5-B0EA-6041DACC3EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9CB8E6B-A223-49C5-B0EA-6041DACC3EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9CB8E6B-A223-49C5-B0EA-6041DACC3EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9CB8E6B-A223-49C5-B0EA-6041DACC3EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
